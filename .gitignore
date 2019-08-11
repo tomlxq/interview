@@ -1,0 +1,7 @@
+*.iws
+*.ipr
+/jvm-demo/.mvn
+/jvm-demo/mvnw
+/jvm-demo/mvnw.cmd
+*.iml
+/*/target/*

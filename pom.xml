@@ -11,6 +11,8 @@
     <modules>
         <module>lambda</module>
         <module>multThreads</module>
+        <module>java-thinking</module>
+        <module>interview-skill</module>
     </modules>
     <build>
         <plugins>
