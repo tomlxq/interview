@@ -16,8 +16,7 @@ public class FloatDemo {
 
             float f = a -b;
         System.out.println(f);
-        System.out.printf("f=%f",f);
-        System.out.printf("二进制输出%s",Integer.toBinaryString(1.0f));
-        Float.toHexString()
+        System.out.printf("f=%f", f);
+        System.out.printf("二进制输出%s", Integer.toBinaryString(1));
     }
 }
