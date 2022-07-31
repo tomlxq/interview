@@ -18,6 +18,11 @@
 --
 -- Table structure for table `student`
 --
+DROP TABLE IF EXISTS `t1_id`;
+CREATE TABLE `t1_id` (
+                           `id` varchar(255) NOT NULL,
+                           PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
 
 DROP TABLE IF EXISTS `student`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;

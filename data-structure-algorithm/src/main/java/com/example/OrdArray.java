@@ -1,5 +1,8 @@
 package com.example;
 
+/**
+ * 有序数组 二分查找
+ */
 public class OrdArray {
     /**
      * sort ary number

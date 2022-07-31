@@ -1,5 +1,8 @@
 package com.tom.demo;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 功能描述
  *
@@ -8,13 +11,32 @@ package com.tom.demo;
  */
 public class Java5Demo {
     public static void main(String[] args) {
-        String[] hello = new String[]{"hello", "world"};
-        String[] hello2 = ary("hello", "world");
-        Integer[] data = ary(1, 2, 3, 4, 5);
-        //formatter.format(Locale.FRANCE, "e = %+10.4f", Math.E);
+        int[] nums = new int[]{4, 5, 7, 7, 5, 1, 2, 3};
+        int nums2 = test(nums);
+        System.out.println(nums2);
+        for (int i : nums) {
+            System.out.println(i);
+        }
+
     }
 
-    private static <T> T[] ary(T... values) {
-        return values;
+    public static int test(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        // int size=nums.length-1;
+        //int[] nums2 = new int[size];
+        //int j = 0;
+        int skipIdx = 0;
+        for (int i = 0; i < nums.length; i++) {
+            if (!map.containsKey(nums[i])) {
+                map.put(nums[i], nums[i]);
+                if (skipIdx > 0) {
+                    nums[skipIdx] = nums[i];
+                    skipIdx = 0;
+                }
+            } else {
+                skipIdx = i;
+            }
+        }
+        return nums.length;
     }
 }
