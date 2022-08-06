@@ -3,9 +3,6 @@ package com.tom.huawei;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-/**
- * decompress packet
- */
 public class DecompressPacket {
 
     public String func(String line) {
