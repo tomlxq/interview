@@ -41,7 +41,7 @@ high=sum
 状态转方程 curr = (prev + curr) % 1000000007
 ```
 ## 暴力递归
-```
+```python
 class Solution:
     def fib(self, n: int) -> int:
         def fb(num: int) -> int:
@@ -51,7 +51,7 @@ class Solution:
 
         return fb(n)
 ```
-```
+```java
 class Solution {
     public int fib(int n) {
          if (n <= 1) {
@@ -62,7 +62,7 @@ class Solution {
 }
 ```
 ## 递归+忆化
-```
+```java
 class Solution {
     public int fib(int n) {
          int[] mem = new int[n + 1];
@@ -85,7 +85,7 @@ class Solution {
 }
 ```
 
-```
+```python
 class Solution:
     def fib(self, n: int) -> int:
         mem = [-1] * (n + 1)
@@ -104,7 +104,7 @@ class Solution:
         return dbf(n)
 ```
 ## 动态规划
-```
+```python
 class Solution {
     public int fib(int n) {
         if (n <= 1) {
@@ -120,7 +120,7 @@ class Solution {
     }
 }
 ```
-```
+```python
 class Solution:
     def fib(self, n: int) -> int:
         if n <= 1:
@@ -132,7 +132,7 @@ class Solution:
         return dp[n]
 ```
 ## 动态规划（压缩状态）
-```
+```java
 class Solution {
     public int fib(int n) {
         if (n <= 1) {
@@ -148,7 +148,7 @@ class Solution {
     }
 }
 ```
-```
+```python
 class Solution:
     def fib(self, n: int) -> int:
         if n <= 1:

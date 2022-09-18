@@ -13,14 +13,7 @@ public class DpDemoTest {
         dp = new DpDemo();
     }
 
-    @Test
-    public void climbStairs() {
-        assertEquals(2, dp.climbStairs(2));
-        assertEquals(3, dp.climbStairs(3));
-        assertEquals(2, dp.climbStairs2(2));
-        assertEquals(3, dp.climbStairs2(3));
 
-    }
 
     @Test
     public void numSquares() {

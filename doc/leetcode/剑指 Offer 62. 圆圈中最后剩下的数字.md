@@ -6,6 +6,8 @@
 
 ## 思路
 
+约瑟夫环
+
 * 循环链表模拟
   假设当前长度为n，数到第m个(通过上面分析可以求余让这个有效的m不大于n)删除，在index位置删除。
 
@@ -26,7 +28,7 @@
   但是递归效率因为有个来回的规程，效率相比直接迭代差一些，也可从前往后迭代
   
 ## java
-  
+
   ```java
   class SimpleNode {
          public SimpleNode(int val) {
@@ -93,8 +95,8 @@
     }
   }
   
-```
-  
+  ```
+
   ## python
 
   ```python
@@ -124,5 +126,5 @@
             value = (value + m) % i
         return value
   ```
-	
-	## 复杂度
+
+## 复杂度
