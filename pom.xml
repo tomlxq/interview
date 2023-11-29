@@ -13,7 +13,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!-- logging -->
         <org.slf4j.version>2.0.0-alpha1</org.slf4j.version>
-        <logback.version>1.2.3</logback.version>
+        <logback.version>1.3.12</logback.version>
     </properties>
     <dependencyManagement>
         <dependencies>
